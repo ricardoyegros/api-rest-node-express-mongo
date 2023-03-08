@@ -6,7 +6,7 @@ import authRoutes from "./routes/auth.route.js"
 const app = express();
 
 app.use(express.json())// Esto es para que express pueda leer los json por ej al consologuear algo
-app.use("/api/v1/",authRoutes)
+app.use("/api/v1/auth",authRoutes)
 
 const PORT = process.env.PORT || 5000
 
